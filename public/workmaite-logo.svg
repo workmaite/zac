@@ -1,8 +1,20 @@
-<svg width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
-  <rect width="200" height="60" fill="black"/>
-  <text x="100" y="40" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="white" text-anchor="middle" letter-spacing="1">
-    workmaite
-  </text>
-  <circle cx="158" cy="18" r="6" fill="#3b82f6"/>
+<svg width="200" height="80" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="80" fill="black"/>
+  <!-- Stylized white W shape with rounded edges -->
+  <path d="M 25 18 
+           L 40 18 
+           L 45 35 
+           Q 47 42 50 42 
+           Q 53 42 55 35 
+           L 60 18 
+           L 75 18 
+           L 70 45 
+           Q 68 52 63 55 
+           Q 58 58 50 58 
+           Q 42 58 37 55 
+           Q 32 52 30 45 
+           Z" 
+        fill="white"/>
+  <!-- Blue dot positioned to the right -->
+  <circle cx="95" cy="50" r="6" fill="#3b82f6"/>
 </svg>
-
