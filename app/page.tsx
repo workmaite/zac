@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -23,7 +24,16 @@ export default function Home() {
           top: `${mousePosition.y}px`,
         }}
       />
-      <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+      <div className="relative flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+        <div className="absolute top-8 left-1/2 transform -translate-x-1/2 z-10">
+          <Image
+            src="/workmaite-logo.svg"
+            alt="WorkMaite Logo"
+            width={200}
+            height={60}
+            priority
+          />
+        </div>
         <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-center py-32 px-16 bg-white dark:bg-black sm:items-start">
           <div className="flex flex-col items-center gap-8 text-center sm:items-start sm:text-left">
             <h1 className="text-5xl font-bold leading-tight tracking-tight text-black dark:text-zinc-50 sm:text-6xl">
